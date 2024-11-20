@@ -52,5 +52,5 @@ def validate_form2():
 
 @app.route('/download/<filename>')
 def download_file(filename):
-    path = os.path.join("C:\\Users\\aditt\\Desktop\\Coding\\crypto_project\\app\\static\\files\\", filename)
+    path = os.path.join("C:\\Users\\Veena V\\Desktop\\PROJECTS\\Stegnography\\Stegnography_webpage\\app\\static\\files", filename)
     return send_file(path, as_attachment=True)

@@ -1,5 +1,5 @@
 body {
-    background: #ffffff;
+    background: #d4cab8; /* Matches the background in index1.css */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,24 +9,41 @@ body {
     margin: 0;
 }
 
-.Message {
-    border: 2px solid #000000; 
+.Download ,.Message {
+    border: 2px solid #f8a202; 
     text-align: center;
-    background: #ffffff;  
-    color: #000000; 
-    cursor: pointer; 
-    font-size: 18px; 
-    margin-top: 20px; 
-    padding: 10px 40px; 
-}
-.Download {
-    border: 2px solid #000000; 
-    text-align: center;
-    background: #ffffff;  
-    color: #000000; 
-    cursor: pointer; 
-    font-size: 18px; 
-    margin-top: 20px; 
-    padding: 10px 40px;   
+    background: -webkit-linear-gradient(to right, #f72b2e, #f8a202);
+	background: linear-gradient(to right, #f72b2e, #f8a202);
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 20px 40px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
 
+.Download h1 , .Message h1{
+    color: black; /* Orange text for header */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Download p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.Download a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+
+.Download:hover ,.Message:hover{
+    /* background-color: #f8a202; 
+    color: #ffffff; White text on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
